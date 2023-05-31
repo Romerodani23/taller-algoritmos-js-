@@ -1,28 +1,21 @@
-case 4: 
-            function opcion4(){
-            numeroa = Number(prompt("Digite por favor el primer número: "));
-            numerob = Number(prompt("Digite por favor el segundo número: "));
+case 5: 
+            function opcion5(){
+            valorCompra = Number(prompt("Digite por favor el valor de la compra: "));
+            cantidadProductos = Number(prompt("Digite por favor la cantidad de productos comprados: "));
             
-            while(valori<numeroa){
-                if(numeroa % valori == 0){
-                   sumauno = sumauno + valori;
-                }
-                valori = valori + 1;
+            if(valorCompra>500000){
+                valorIVA=valorCompra*0.19;
+                valorTotalFinal=valorCompra
+                console.log(`El valor de la compra es de : ${valorCompra}`);
+                console.log(`Se le devuelve el valor del iVA (19%): ${valorIVA}`)
             }
-            while(valorj<numerob){
-            if(numerob % valorj == 0){
-                sumados = sumados + valorj;
-                }
-                valorj=valorj + 1;
+            else if(valorCompra>1000000){
+                valorIVA=valorCompra*0.19;
+                valorTotalFinal=(valorCompra*0.90);
+                console.log(`El valor de la compra menos el descuento del 10% es de : ${valorTotalFinal}`);
+                console.log(`Se le devuelve el valor del iVA por que su compra es mayor a $500000 (19%): ${valorIVA}`)
             }
-            if(sumauno==numerob && sumados==numeroa){
-                console.log("Los números si son amigos");
-
-            }
-            else{
-                console.log("Los números no son amigos");
-            }
-        opcion4Contador++;
+        opcion5Contador++;
         }
-        opcion4();
+        opcion5();
         break;
