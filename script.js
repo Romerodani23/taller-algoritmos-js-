@@ -1,20 +1,28 @@
-case 3:
-            function opcion3(){ 
-            ladounoTriangulo =  Number(prompt("Digite por favor el primer lado: del triangulo: "));
-            ladodosTriangulo =  Number(prompt("Digite por favor el segundo lado: del triangulo: "));
-            ladotresTriangulo =  Number(prompt("Digite por favor el tercer lado: del triangulo: "));
-         
-            if(ladounoTriangulo==ladodosTriangulo && ladounoTriangulo==ladotresTriangulo){
-                console.log("El triangulo es equilatero");
+case 4: 
+            function opcion4(){
+            numeroa = Number(prompt("Digite por favor el primer número: "));
+            numerob = Number(prompt("Digite por favor el segundo número: "));
+            
+            while(valori<numeroa){
+                if(numeroa % valori == 0){
+                   sumauno = sumauno + valori;
+                }
+                valori = valori + 1;
             }
+            while(valorj<numerob){
+            if(numerob % valorj == 0){
+                sumados = sumados + valorj;
+                }
+                valorj=valorj + 1;
+            }
+            if(sumauno==numerob && sumados==numeroa){
+                console.log("Los números si son amigos");
 
-            else if(ladounoTriangulo==ladodosTriangulo || ladodosTriangulo==ladotresTriangulo){
-                console.log("El triangulo es isosceles")
             }
             else{
-                console.log("El triangulo tiene todos sus lados desiguales, por lo tanto es escaleno")
+                console.log("Los números no son amigos");
             }
-        opcion3Contador++;
+        opcion4Contador++;
         }
-        opcion3();
+        opcion4();
         break;
