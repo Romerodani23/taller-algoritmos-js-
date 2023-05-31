@@ -1,21 +1,21 @@
-case 5: 
-            function opcion5(){
-            valorCompra = Number(prompt("Digite por favor el valor de la compra: "));
-            cantidadProductos = Number(prompt("Digite por favor la cantidad de productos comprados: "));
-            
-            if(valorCompra>500000){
-                valorIVA=valorCompra*0.19;
-                valorTotalFinal=valorCompra
-                console.log(`El valor de la compra es de : ${valorCompra}`);
-                console.log(`Se le devuelve el valor del iVA (19%): ${valorIVA}`)
+case 6:
+            function opcion6(){
+            notaUno= Number(prompt("Digite por favor la primera nota: "));
+            notaDos= Number(prompt("Digite por favor la segunda nota: "));
+            notaTres= Number(prompt("Digite por favor la tercera nota: "));
+            notaCuatro= Number(prompt("Digite por favor la cuarta nota: "));
+            if(notaCuatro==5){
+                notaUno++;
+                notaDos++;
+                notaTres++;
             }
-            else if(valorCompra>1000000){
-                valorIVA=valorCompra*0.19;
-                valorTotalFinal=(valorCompra*0.90);
-                console.log(`El valor de la compra menos el descuento del 10% es de : ${valorTotalFinal}`);
-                console.log(`Se le devuelve el valor del iVA por que su compra es mayor a $500000 (19%): ${valorIVA}`)
+            notafinal=(notaUno*0.1)+(notaDos*0.2)+(notaTres*0.3)+(notaCuatro*0.4);
+            if(notafinal>3.5){
+                console.log("El estudiante si ganó");
+            }else{
+                console.log("El estudiante no pudo ganar");
             }
-        opcion5Contador++;
+        opcion6Contador++;
         }
-        opcion5();
+        opcion6();
         break;
